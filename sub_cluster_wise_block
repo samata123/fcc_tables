@@ -1,0 +1,5 @@
+1.contractorClusterWiseBlockController
+2.crfc token is added during upload
+3.from fcc_block_contractor_subcluster_wise
+4.check if subclustor exit or not  in fcc_salesforcedimclub (select sub_cluster_c FROM fcc_salesforcedimclub WHERE sub_cluster_c LIKE '$subclustercode' LIMIT 1 ")
+5.check sub cluster exist in ws or not(
