@@ -2,4 +2,7 @@
 2.crfc token is added during upload
 3.from fcc_block_contractor_subcluster_wise
 4.check if subclustor exit or not  in fcc_salesforcedimclub (select sub_cluster_c FROM fcc_salesforcedimclub WHERE sub_cluster_c LIKE '$subclustercode' LIMIT 1 ")
-5.check sub cluster exist in ws or not(
+)5.check sub cluster exist in ws(wirds_swipe) or not(SELECT tier_pk_id FROM ".$this->WORLDSWIPEDB.".`ws_tier`  WHERE `prgm_fk_id` = '$this->PRGMID' AND tier_code = '$subclustercode' LIMIT 1
+6.check user exist or not in ACCID
+7.upload to the log table  fcc_block_contractor_subcluster_wise_upload_log`
+8. again only valid ones get uploade in fcc_block_contractor_subcluster_wise
